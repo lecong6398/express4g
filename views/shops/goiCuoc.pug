@@ -1,0 +1,132 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+  //- Css folder
+  link(rel='stylesheet', href='../stylesheets/shops/goiCuoc.css')
+  title Hello, world!
+// Start menu
+.wrap-menu.container
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href='/home')
+      img(src='../images/logo.png', alt='not find img')
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='/home')
+            | HOME 
+            span.sr-only (current)
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | G&Oacute;I DATA CHO DI &Dstrok;&#x1ED8;NG
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/home/UMAX300') UMAX300
+            a.dropdown-item(href='/home/MIMAX450') MIMAX450
+            a.dropdown-item(href='/home/MIMAX200') MIMAX200
+            a.dropdown-item(href='/home/MIMAX125') MIMAX125
+            a.dropdown-item(href='/home/MIMAX70') MIMAX70
+            a.dropdown-item(href='/home/MIMAX90') MIMAX90
+            a.dropdown-item(href='/home/XL90') XL90
+            a.dropdown-item(href='/home/ECOD50') ECOD50
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | G&Oacute;I DATA CHO DCOM
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/home/D900') D900
+            a.dropdown-item(href='/home/D500') D500
+            a.dropdown-item(href='/home/D300K') D300K
+            a.dropdown-item(href='/home/D200') D200
+            a.dropdown-item(href='/home/D120') D120
+            a.dropdown-item(href='/home/D90') D90
+            a.dropdown-item(href='/home/D70') D70
+            a.dropdown-item(href='/home/D50') D50
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | G&Oacute;I COMBO CHO DI &Dstrok;&#x1ED8;NG
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/home/T80K') T80K
+            a.dropdown-item(href='/home/T70K') T70K
+            a.dropdown-item(href='/home/T50K') T50K
+            a.dropdown-item(href='/home/HI90') HI90
+            a.dropdown-item(href='/home/F90') F90
+            a.dropdown-item(href='/home/B150K') B150K
+            a.dropdown-item(href='/home/B100K') B100K
+            a.dropdown-item(href='/home/12F90') 12F90
+            a.dropdown-item(href='/home/6F90') 6F90
+            a.dropdown-item(href='/home/3F90') 3F90
+// End menu
+// Start GoiCuoc
+.wrapGoiCuoc.container
+  .row
+    .col-lg-5
+      .roundCart
+        .card-body.contenCart
+          h5.card-title
+            a(href='/home/' + goiCuocDangKi.tenGoiCuoc) #{goiCuocDangKi.tenGoiCuoc}
+          h5 #{goiCuocDangKi.dungLuong}
+          p #{goiCuocDangKi.cuocPhi}/#{goiCuocDangKi.thoiGianSuDung}
+          a.btn.btn-primary(href='#') &Dstrok;&abreve;ng K&yacute; Qua SMS
+          div
+            a.btn.btn-success(href='/home/' + goiCuocDangKi.tenGoiCuoc) Chi Ti&#x1EBF;t
+    .col-lg-6
+      .moTaGoiCuoc
+        p #{goiCuocDangKi.chiTietGoiCuoc}
+        h5 Chi ti&#x1EBF;t g&oacute;i c&#x1B0;&#x1EDB;c #{goiCuocDangKi.tenGoiCuoc} c&#x1EE7;a Viettel:
+        p Cước phí đăng ký: #{goiCuocDangKi.cuocPhi}
+        p Thời gian sử dụng của gói cước: #{goiCuocDangKi.thoiGianSuDung} kể từ ngày đăng ký
+        h5 H&#x1B0;&#x1EDB;ng d&#x1EAB;n c&aacute;ch &dstrok;&abreve;ng k&yacute; g&oacute;i c&#x1B0;&#x1EDB;c #{goiCuocDangKi.tenGoiCuoc} Viettel:
+        p
+          | &Dstrok;&#x1EC3; ti&#x1EBF;n h&agrave;nh &dstrok;&abreve;ng k&yacute; g&oacute;i c&#x1B0;&#x1EDB;c #{goiCuocDangKi.tenGoiCuoc} Viettel, kh&aacute;ch h&agrave;ng ch&#x1EC9; c&#x1EA7;n so&#x1EA1;n tin nh&#x1EAF;n theo c&uacute; ph&aacute;p:
+          | #{goiCuocDangKi.cuPhap} g&#x1EED;i 9123
+        p Trong &dstrok;&oacute;:
+        p #{goiCuocDangKi.tenGoiCuoc} l&agrave; t&ecirc;n g&oacute;i c&#x1B0;&#x1EDB;c 3G/4G Viettel
+        p 0868009198 l&agrave; s&#x1ED1; &dstrok;&#x1EA1;i l&yacute; h&#x1ED7; tr&#x1EE3; &dstrok;&abreve;ng k&yacute; 3G/4G &dstrok;&#x1B0;&#x1EE3;c Viettel &#x1EE7;y quy&#x1EC1;n
+        p
+          | 9123 l&agrave; s&#x1ED1; t&#x1ED5;ng &dstrok;&agrave;i &dstrok;&abreve;ng k&yacute; d&#x1ECB;ch v&#x1EE5; 3G/4G c&#x1EE7;a Viettel (mi&#x1EC5;n ph&iacute; tin nh&#x1EAF;n &dstrok;&abreve;ng k&yacute;)
+        h5 &#x1AF;u &dstrok;&atilde;i data kh&#x1EE7;ng khi &dstrok;&abreve;ng k&yacute; g&oacute;i #{goiCuocDangKi.tenGoiCuoc} c&#x1EE7;a Viettel:
+        p Mi&#x1EC5;n ph&iacute; #{goiCuocDangKi.dungLuong} t&#x1ED1;c &dstrok;&#x1ED9; cao &dstrok;&#x1EC3; l&#x1B0;&#x1EDB;t web th&#x1ECF;a th&iacute;ch.
+        p
+          | Ho&agrave;n to&agrave;n kh&ocirc;ng gi&#x1EDB;i h&#x1EA1;n data t&#x1ED1;c &dstrok;&#x1ED9; th&#x1B0;&#x1EDD;ng, mi&#x1EC5;n ph&iacute; c&#x1B0;&#x1EDB;c v&#x1B0;&#x1EE3;t g&oacute;i khi s&#x1EED; d&#x1EE5;ng h&#x1EBF;t data t&#x1ED1;c &dstrok;&#x1ED9;
+          | cao.
+        h5 C&aacute;c c&uacute; ph&aacute;p h&#x1ED7; tr&#x1EE3; khi s&#x1EED; d&#x1EE5;ng g&oacute;i #{goiCuocDangKi.tenGoiCuoc} Viettel:
+        p Ki&#x1EC3;m tra dung l&#x1B0;&#x1EE3;ng data Viettel t&#x1ED1;c &dstrok;&#x1ED9; cao c&ograve;n l&#x1EA1;i c&#x1EE7;a g&oacute;i c&#x1B0;&#x1EDB;c: KTTK g&#x1EED;i 191.
+        p
+          | N&#x1EBF;u kh&ocirc;ng c&oacute; nhu c&#x1EA7;u ti&#x1EBF;p t&#x1EE5;c s&#x1EED; d&#x1EE5;ng g&oacute;i c&#x1B0;&#x1EDB;c, b&#x1EA1;n c&oacute; th&#x1EC3; h&#x1EE7;y g&oacute;i #{goiCuocDangKi.tenGoiCuoc} Viettel ngay theo c&uacute;
+          | ph&aacute;p: HUY g&#x1EED;i 191 sau &dstrok;&oacute; t&#x1ED5;ng &dstrok;&agrave;i Viettel s&#x1EBD; nhanh ch&oacute;ng g&#x1EED;i tin nh&#x1EAF;n y&ecirc;u c&#x1EA7;u x&aacute;c nh&#x1EAD;n h&#x1EE7;y, l&uacute;c
+          | n&agrave;y b&#x1EA1;n so&#x1EA1;n: Y g&#x1EED;i 191 &dstrok;&#x1EC3; ho&agrave;n t&#x1EA5;t th&#x1EE7; t&#x1EE5;c h&#x1EE7;y
+// End GoiCuoc
+// Start CacGoiKhac
+.wrapGoiCuoc.container
+  .row
+    each goiCuoc in goiCuocLienQuan
+      .wrapCart.col-lg-3.col-md-6
+        .roundCart
+          .card-body.contenCart
+            h5.card-title
+              a(href='/home/' + goiCuoc.tenGoiCuoc) #{goiCuoc.tenGoiCuoc}
+            h5 #{goiCuoc.dungLuong}
+            p #{goiCuoc.cuocPhi}/#{goiCuoc.thoiGianSuDung}
+            a.btn.btn-primary(href='#') &Dstrok;&abreve;ng K&yacute; Qua SMS
+            div
+              a.btn.btn-success(href='/home/' + goiCuoc.tenGoiCuoc) Chi Ti&#x1EBF;t
+// End CacGoiKhac
+// Start Footer
+.footer
+  .container-fluid
+    .row
+      .address
+        p Viettel Telecom 2019. All rights reserved.
+        p C&#x1A1; quan ch&#x1EE7; qu&#x1EA3;n: T&#x1EAD;p &dstrok;o&agrave;n Vi&#x1EC5;n th&ocirc;ng Qu&acirc;n &dstrok;&#x1ED9;i.
+        p Gi&#x1EA5;y ph&eacute;p s&#x1ED1;: 144/GP - BC do B&#x1ED9; th&ocirc;ng tin - Truy&#x1EC1;n th&ocirc;ng c&#x1EA5;p ng&agrave;y 18/04/2007
+        h2 1800 8168
+// End Footer
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

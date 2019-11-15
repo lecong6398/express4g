@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    width: 80%;
+    margin: auto;
+}
+.itemMenu{
+    color: black;
+}
+.wrapGoiCuoc{
+    margin-top: 2rem;
+}
+.moTaGoiCuoc{
+    margin-top: 2rem;
+}
+/* Start wrapconten */
+.contenTitle{
+    margin-top: 2rem;
+}
+.contenTitle h3 {
+    text-align: center;
+    color: #009490;
+}
+.wrapCart{
+    margin-top: 1rem;
+}
+.card{
+    border: 0px;
+}
+.roundCart{
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 28px;
+    box-shadow: 10px 10px 5px grey;
+}
+.contenCart{
+    text-align: center;
+}
+.contenCart h5 {
+    color: #00918e;
+}
+.contenCart h5 a {
+    color: #00918e;
+}
+.contenCart  p{
+    font-weight: bold;
+}
+.contenCart > a{
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.card-title a{
+    text-decoration: none;
+}
+
+.moTaGoiCuoc > p {
+    margin-bottom: 0px;
+}
+/* End wrapconten */
+/* Start footer */
+.footer{
+    margin-top: 2rem;
+    background: #00918e;
+    color: azure;
+}
+.address{
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+}
+/* End footer */

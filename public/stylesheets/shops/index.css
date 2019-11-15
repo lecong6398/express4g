@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    width: 80%;
+    margin: auto;
+}
+.itemMenu{
+    color: black;
+}
+/* Start slider */
+.slider{
+    height: 300px;
+    width: 100%;
+    background-image: url('../../images/Banner-01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* End slider */
+/* Start wrapconten */
+.contenTitle{
+    margin-top: 2rem;
+}
+.contenTitle h3 {
+    text-align: center;
+    color: #009490;
+}
+.card{
+    border: 0px;
+}
+.roundCart{
+    width: 95%;
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 28px;
+    box-shadow: 10px 10px 5px grey;
+}
+.contenCart{
+    text-align: center;
+}
+.contenCart h5 {
+    color: #00918e;
+}
+.contenCart h5 a {
+    color: #00918e;
+}
+.contenCart  p{
+    font-weight: bold;
+}
+.contenCart > a{
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.card-title a{
+    text-decoration: none;
+}
+/* End wrapconten */
+/* Start footer */
+.footer{
+    margin-top: 2rem;
+    background: #00918e;
+    color: azure;
+}
+.address{
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+}
+/* End footer */
