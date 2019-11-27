@@ -12,7 +12,7 @@ module.exports.getIndex = (req, res, next) => {
             if (result[i].loaiGoiCuoc == "simDcomViettel") {
                 dComViettel.push(result[i])
             }
-            if (result[i].loaiGoiCuoc == "simComBoViettel") {
+            if (result[i].loaiGoiCuoc == "comBoViettel") {
                 comBoViettel.push(result[i])
             }
         }

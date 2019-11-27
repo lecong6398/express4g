@@ -99,6 +99,24 @@ head
                 a.btn.btn-primary(href='sms:9123?&body=' + goiCuoc.cuPhap) &Dstrok;&abreve;ng K&yacute; Qua SMS
                 div
                   a.btn.btn-success(href='/home/' + goiCuoc.tenGoiCuoc) Chi Ti&#x1EBF;t
+      
+.wrapConten
+  .contenTitle
+    h3 CÁC GÓI CƯỚC COMBO DÀNH CHO SIM DI ĐỘNG VIETTEL
+  .listData
+    .container
+      .row
+        each goiCuoc in comBoViettel
+          .wrapCart.col-lg-3.col-md-6
+            .roundCart
+              .card-body.contenCart
+                h5.card-title
+                  a(href='/home/' + goiCuoc.tenGoiCuoc) #{goiCuoc.tenGoiCuoc}
+                h5 #{goiCuoc.dungLuong}
+                p #{goiCuoc.cuocPhi}/#{goiCuoc.thoiGianSuDung}
+                a.btn.btn-primary(href='sms:9123?&body=' + goiCuoc.cuPhap) &Dstrok;&abreve;ng K&yacute; Qua SMS
+                div
+                  a.btn.btn-success(href='/home/' + goiCuoc.tenGoiCuoc) Chi Ti&#x1EBF;t
 // End wrapConten
 .footer
   .container-fluid
