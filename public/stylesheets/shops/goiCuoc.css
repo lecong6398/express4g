@@ -16,6 +16,7 @@ body{
     margin-top: 2rem;
 }
 /* Start wrapconten */
+
 .contenTitle{
     margin-top: 2rem;
 }
@@ -58,6 +59,13 @@ body{
 
 .moTaGoiCuoc > p {
     margin-bottom: 0px;
+}
+.titleCacGoiCuoc{
+    margin-top: 2rem;
+}
+.titleCacGoiCuoc h2{
+    text-align: start;
+    color: rgb(0, 148, 144);
 }
 /* End wrapconten */
 /* Start footer */
