@@ -67,7 +67,7 @@ head
             a(href='/home/' + goiCuocDangKi.tenGoiCuoc) #{goiCuocDangKi.tenGoiCuoc}
           h5 #{goiCuocDangKi.dungLuong}
           p #{goiCuocDangKi.cuocPhi}/#{goiCuocDangKi.thoiGianSuDung}
-          a.btn.btn-primary(href='#') &Dstrok;&abreve;ng K&yacute; Qua SMS
+          a.btn.btn-primary(href='sms:9123?&body=' + goiCuocDangKi.cuPhap) &Dstrok;&abreve;ng K&yacute; Qua SMS
           div
             a.btn.btn-success(href='/home/' + goiCuocDangKi.tenGoiCuoc) Chi Ti&#x1EBF;t
     .col-lg-6
@@ -110,7 +110,7 @@ head
               a(href='/home/' + goiCuoc.tenGoiCuoc) #{goiCuoc.tenGoiCuoc}
             h5 #{goiCuoc.dungLuong}
             p #{goiCuoc.cuocPhi}/#{goiCuoc.thoiGianSuDung}
-            a.btn.btn-primary(href='#') &Dstrok;&abreve;ng K&yacute; Qua SMS
+            a.btn.btn-primary(href='sms:9123?&body=' + goiCuoc.cuPhap) &Dstrok;&abreve;ng K&yacute; Qua SMS
             div
               a.btn.btn-success(href='/home/' + goiCuoc.tenGoiCuoc) Chi Ti&#x1EBF;t
 // End CacGoiKhac
